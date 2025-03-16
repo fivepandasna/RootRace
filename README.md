@@ -14,6 +14,15 @@ RootRace -  A simple game where you guess the next digit in a square root
 
 ## Download
 
+Dowload the ui version of the game from releases and double click the .py file to run the game.
+
+You can also run the game without ui in cli by downloading the non-ui version and running it in cli.
+
+To do this, open a terminal where you have the file and run
+
+```
+py RootRace.py
+```
 ## How to play
 
 Simply guess the next digit in the sequence of the square root you are given. 

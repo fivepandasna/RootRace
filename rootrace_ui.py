@@ -268,6 +268,14 @@ class SquareRootGame:
 
 # Create and run the application
 if __name__ == "__main__":
-    root = tk.Tk()
-    game = SquareRootGame(root)
-    root.mainloop()
+    try:
+        # Make sure the window doesn't close immediately when run from explorer
+        root = tk.Tk()
+        app = SquareRootGame(root)
+        root.mainloop()
+    except Exception as e:
+        # Show error in a message box instead of crashing
+        messagebox.showerror("Error", f"An error occurred: {str(e)}")
+        # Keep window open for a few seconds to see error
+        import time
+        time.sleep(5)
